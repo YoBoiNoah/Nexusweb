@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nexusweb | High-Converting Websites</title>
+
+<!-- SEO META -->
+<meta name="keywords" content="website design, small business website, fast website development, SEO website, booking websites, Nexusweb">
+<meta name="author" content="Nexusweb">
+<meta property="og:title" content="Nexusweb | High-Converting Websites">
+<meta property="og:description" content="Websites built in 24-72 hours with 6-month maintenance policy.">
+<meta property="og:type" content="website">
+
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Nexusweb",
+  "url": "https://nexusweb.us",
+  "description": "We build high-converting websites for businesses with a 6-month maintenance guarantee.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-248-408-2328",
+    "contactType": "customer service"
+  }
+}
+</script>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-050BR2ENP7"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-050BR2ENP7', { 'send_page_view': false });
+</script>
+
+<style>
+/* ---------------------- */
+/* GLOBAL STYLES */
+/* ---------------------- */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg,#0d0d0d 0%,#1a1a1a 100%);
+  color: #fff;
+
+  font-size: 14px;
+
+  /* Allow scrolling */
+  overflow-x: hidden; /* only hide horizontal scroll if needed */
+}
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* center content horizontally */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,h2,h3,h4,h5 {
+  margin: 0;
+  font-weight: 700;
+}
+p {
+  margin: 0 0 6px;
+}
+button, select {
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* ---------------------- */
+/* HEADER & NAV */
+/* ---------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(5px);
+}
+header .logo {
+  font-size: 20px;
+  color: gold;
+  font-weight: 900;
+}
+.sticky-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: gold;
+  color: #000;
+  padding: 10px 18px;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 13px;
+  z-index: 999;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+}
+.sticky-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ---------------------- */
+/* HERO SECTION */
+/* ---------------------- */
+.hero {
+  background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  text-align: center;
+  padding: 80px 20px 60px;
+  position: relative;
+  color: #fff;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: rgba(0,0,0,0.6);
+}
+.hero h1, .hero p, .hero .cta-btn {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+.hero p {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 18px;
+}
+.hero .cta-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: gold;
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 7px;
+  transition: all 0.25s;
+}
+.hero .cta-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ---------------------- */
+/* SECTION HEADINGS */
+/* ---------------------- */
+.section h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: gold;
+}
+
+.trusted-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding-top: 30px;   
+  padding-bottom: 20px;
+}
+
+.trusted-section h2 {
+  margin-bottom: 12px; 
+}
+
+.trusted-section p {
+  max-width: 520px;
+  line-height: 1.5;
+  font-size: 15px;
+  margin: 0 auto 12px; 
+  color: #f5f5f5;
+}
+
+.gold-line {
+  width: 50px;
+  height: 2px;
+  background: gold;
+  margin: 5px auto 12px;
+  border-radius: 2px;
+}
+
+/* ---------------------- */
+/* PANELS / CARDS */
+/* ---------------------- */
+.panel-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+.panel.luxury-card {
+  background: rgba(0,0,0,0.6);
+  border: 2px solid gold;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+  transition: all 0.25s ease;
+}
+.panel.luxury-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(255,215,0,0.4);
+  background: rgba(0,0,0,0.7);
+}
+.panel.luxury-card h3 {
+  color: gold;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+.panel.luxury-card p {
+  color: #fff;
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+}
+
+/* ---------------------- */
+/* BUTTONS */
+/* ---------------------- */
+.service-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+  margin-top: 6px;
+  transition: all 0.25s;
+}
+.service-btn.yellow {
+  background-color: #FFD700;
+  color: #000;
+}
+.service-btn.yellow:hover {
+  opacity: 0.85;
+}
+
+/* ---------------------- */
+/* FAQ / CONTACT / FORM */
+/* ---------------------- */
+.faq {
+  max-width: 700px;
+  margin: 20px auto;
+}
+.faq-item {
+  background: rgba(0,0,0,0.6);
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+}
+.faq-item h3 {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: gold;
+}
+.faq-item p {
+  color: #fff;
+  font-size: 13px;
+}
+.contact {
+  background: rgba(0,0,0,0.7);
+  padding: 18px;
+  border-radius: 10px;
+  max-width: 480px;
+  margin: 15px auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: all 0.4s ease;
+}
+.contact.highlight {
+  box-shadow: 0 0 25px 5px gold;
+  transform: scale(1.02);
+}
+.contact h2 {
+  text-align: center;
+  color: gold;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.contact input, .contact select, .contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 4px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+.contact button {
+  background: gold;
+  color: #000;
+  padding: 12px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+  transition: all 0.25s;
+}
+.contact button:hover {
+  background: #f5c242;
+}
+
+/* ---------------------- */
+/* ABOUT / TERMS / GRID BOXES */
+/* ---------------------- */
+.about, .terms {
+  max-width: 700px;
+  margin: 15px auto;
+  padding: 15px;
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+.about h2, .terms h2 {
+  color: gold;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.about p, .terms p {
+  color: #fff;
+  line-height: 1.4;
+  font-size: 13px;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+.why-box {
+  background: rgba(0,0,0,0.6);
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+}
+.why-box h3 {
+  color: gold;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+.why-box p {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+/* ---------------------- */
+/* EXIT POPUP STYLES */
+/* ---------------------- */
+.exit-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.exit-popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+.exit-popup-content {
+  background: rgba(0,0,0,0.95);
+  border: 2px solid gold;
+  border-radius: 10px;
+  padding: 20px 25px;
+  max-width: 380px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(255,215,0,0.5);
+}
+.exit-popup-content h2 {
+  color: gold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.exit-popup-content p {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+#exit-contact-popup {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.claim-btn, .close-btn {
+  display: inline-block;
+  padding: 10px 14px;
+  margin: 3px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.claim-btn {
+  background: gold;
+  color: #000;
+}
+.claim-btn:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+.close-btn {
+  background: #444;
+  color: #fff;
+}
+.close-btn:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+/* ---------------------- */
+/* FOOTER */
+/* ---------------------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  background: rgba(0,0,0,0.8);
+  margin-top: 15px;
+  border-top: 2px solid gold;
+  font-size: 13px;
+}
+
+/* ---------------------- */
+/* RESPONSIVE */
+/* ---------------------- */
+@media(max-width:768px){
+  .panel-container { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 26px; }
+  .hero p { font-size: 14px; }
+  .contact h2 { font-size: 16px; }
+  body { transform: none; width: auto; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Nexusweb</div>
+</header>
+
+<a href="#contact" class="sticky-btn">💳 Pay & Book</a>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+<h1>High-Converting Websites Delivered Fast</h1>
+<p>Get more bookings for your business with professional websites built in 24-72 hours.</p>
+<a href="#contact" class="cta-btn">💳 Get Started Now</a>
+</section>
+
+<!-- TRUSTED -->
+<section class="section trusted-section">
+<h2>Trusted by 50+ Businesses</h2>
+<div class="gold-line"></div>
+<p>Hundreds of businesses rely on Nexusweb for fast, high-converting websites. Join our growing list of satisfied clients!</p>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+<h2>Our Services</h2>
+<div class="gold-line"></div>
+<div class="panel-container">
+  <div class="panel luxury-card"><h3>Starter ($400)</h3><p>1 page site (basic info + booking link)</p><a href="#contact" class="service-btn yellow">💳 Pay & Book</a></div>
+  <div class="panel luxury-card"><h3>Growth ($800)</h3><p>Multi-page site + booking + basic SEO. 24/7 support, personal contact, money-back guarantee.</p><a href="#contact" class="service-btn yellow">💳 Pay & Book</a></div>
+  <div class="panel luxury-card"><h3>Premium ($1500)</h3><p>Full website + branding + optimization. Includes personal phone, 24/7 support, 6-month bug fix policy.</p><a href="#contact" class="service-btn yellow">💳 Pay & Book</a></div>
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="section">
+<h2>Our Work</h2>
+<div class="gold-line"></div>
+<div class="panel-container">
+<div class="panel luxury-card"><h3>HVAC Business Website</h3><p>Professional HVAC website designed to increase bookings and local visibility.</p><a href="https://absolutecomforts.com/" target="_blank" class="service-btn yellow">View Website</a></div>
+<div class="panel luxury-card"><h3>LuxeHairStudio Template</h3><p>Modern website template for beauty salons and hair studios. Optimized for mobile and SEO.</p><a href="https://yoboinoah.github.io/LuxeHairStudio/" target="_blank" class="service-btn yellow">View Template</a></div>
+</div>
+</section>
+
+<!-- SPECIAL OFFERS -->
+<section class="section special-offers">
+<h2>Special Offers</h2>
+<div class="gold-line"></div>
+<div class="panel-container">
+<div class="panel luxury-card special-offer-trigger"><h3>🚀 Launch Discount - 15% Off</h3><p>Get your custom website built this month and save 15% on any package.</p></div>
+<div class="panel luxury-card special-offer-trigger"><h3>🔍 Free SEO Audit</h3><p>Claim a free SEO audit if you sign up before May 1st.</p></div>
+<div class="panel luxury-card special-offer-trigger"><h3>🎁 Buy 1 Premium, Get 1 Free</h3><p>Purchase a Premium package and get an additional website free.</p></div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+<h2>FAQs</h2>
+<div class="gold-line"></div>
+<div class="faq-item"><h3>What happens after I purchase?</h3><p>After you pay & book, you’ll get a personal contact and we begin building your website immediately.</p></div>
+<div class="faq-item"><h3>Delivery Time?</h3><p>24h for Starter, 48h for Growth, 72h for Premium packages.</p></div>
+<div class="faq-item"><h3>Can I request changes?</h3><p>6-month policy for bug fixes, feedback, and site changes.</p></div>
+<div class="faq-item"><h3>Money-back Guarantee?</h3><p>If your website gets flagged, you get a full refund. No questions asked.</p></div>
+</section>
+
+<!-- MAP -->
+<section class="section">
+  <h2>Interactive Map</h2>
+  <div class="gold-line"></div>
+  <div class="map-container" style="display:flex; justify-content:center; margin-top:10px;">
+    <iframe
+      src="https://www.google.com/maps?q=USA&hl=en&z=4&output=embed"
+      width="800"
+      height="450"
+      style="border:0; border-radius:8px;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+<h2>Testimonials</h2>
+<div class="gold-line"></div>
+<div class="panel-container">
+<div class="panel luxury-card"><h3>Client 1</h3><p>"Nexusweb built my website in 2 days and I started getting more calls immediately."</p>⭐⭐⭐⭐⭐</div>
+<div class="panel luxury-card"><h3>Client 2</h3><p>"Super easy process. No meetings needed and everything was handled for me."</p>⭐⭐⭐⭐⭐</div>
+<div class="panel luxury-card"><h3>Client 3</h3><p>"The 6-month support policy is huge. They actually update the site based on feedback."</p>⭐⭐⭐⭐⭐</div>
+</div>
+</section>
+
+<!-- PAY & BOOK FORM -->
+<section class="section" id="contact">
+  <h2>Pay & Book</h2>
+  <div class="contact">
+    <form id="booking-form" action="https://formspree.io/f/xvzvwzbe" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <textarea name="details" placeholder="Business / Notes"></textarea>
+   <select name="package" required>
+  <option value="" disabled selected>Select Package</option>
+  <option>Starter ($400)</option>
+  <option>Growth ($800)</option>
+  <option>Premium ($1500)</option>
+</select>
+<span id="price-display" style="font-weight:bold; margin-left:10px;">$0</span>
+      <select name="payment" required id="payment-method">
+        <option value="" disabled selected>Select Payment Method</option>
+        <option value="cashapp">Cash App</option>
+        <option value="venmo">Venmo</option>
+        <option value="paypal">PayPal</option>
+      </select>
+
+      <!-- HIDDEN INPUTS -->
+      <input type="hidden" name="price" value="">
+      <input type="hidden" name="discount" value="0">
+      <input type="hidden" name="_subject" value="New Booking from Nexusweb">
+      <input type="hidden" name="_template" value="table">
+
+      <button type="submit">Pay & Book</button>
+      <p id="success-msg" style="display:none;color:gold;margin-top:6px;">✅ Thank you! Your booking has been sent.</p>
+    </form>
+  </div>
+</section>
+
+<!-- WHY CHOOSE NEXUSWEB -->
+<section class="section">
+<h2>Why Choose Nexusweb</h2>
+<div class="gold-line"></div>
+<div class="why-grid">
+<div class="why-box"><h3>Proven Results</h3><p>Websites that increase bookings, engagement, and conversions.</p></div>
+<div class="why-box"><h3>Hassle-Free</h3><p>24/7 text support. Personal contact for each client.</p></div>
+<div class="why-box"><h3>Fast Delivery</h3><p>Websites delivered within 24-72 hours depending on package.</p></div>
+<div class="why-box"><h3>Money-Back Guarantee</h3><p>If your website gets flagged, you get a full refund.</p></div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+<h2>How It Works</h2>
+<div class="gold-line"></div>
+<div class="panel-container">
+<div class="panel luxury-card"><h3>Step 1</h3><p>Choose your package.</p></div>
+<div class="panel luxury-card"><h3>Step 2</h3><p>Pay & book via your chosen payment method.</p></div>
+<div class="panel luxury-card"><h3>Step 3</h3><p>Receive your website in 24-72 hours.</p></div>
+</div>
+</section>
+
+<!-- ABOUT OUR COMPANY -->
+<section class="section about">
+  <h2>About Our Company</h2>
+  <p>Nexusweb builds websites that bring more bookings to your business without the hassle. We are professional, fast, and reliable. Our team handles design, SEO, and optimization so you can focus on your business. Clients receive 24/7 text support, a personal contact number, and a money-back guarantee if any issues arise. We also offer a 6-month policy for bug fixes, client feedback, and website changes after purchase.</p>
+</section>
+
+<!-- TERMS & AGREEMENT -->
+<section class="section terms">
+  <h2>Terms & Agreement</h2>
+  <p>Your purchase is final after payment. Nexusweb reserves the right to terminate services at any time. The client has a 6-month policy for bug fixes and website changes. Nexusweb guarantees website delivery within 24-72 hours depending on the package. If the website gets flagged, you get your money-back guarantee — no problems.</p>
+</section>
+
+<!-- EXIT POPUP -->
+
+<div id="exit-popup" class="exit-popup">
+  <div class="exit-popup-content">
+    <h2>Wait! Special Offer 🎁</h2>
+    <p>Enter your email or phone to claim your 15% discount!</p>
+    <p>⏳ Offer expires in: <span id="exit-timer">24:00:00</span></p>
+    <input type="text" id="exit-contact-popup" placeholder="Email or Phone">
+    <select id="exit-payment-method">
+      <option value="" disabled selected>Select Payment Method</option>
+      <option value="cashapp">Cash App</option>
+      <option value="venmo">Venmo</option>
+      <option value="paypal">PayPal</option>
+    </select>
+    <button class="claim-btn" onclick="submitExitContact()">Claim Discount</button>
+    <button class="close-btn" onclick="closeExitPopup()">Close</button>
+  </div>
+</div>
+
+<footer>
+<p>&copy; 2026 Nexusweb | All Rights Reserved</p>
+</footer>
+
+<!-- LIVE CHAT (Tawk.to) -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/69cbd4f336cad41c38488fc1/1jl23fm1d';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  // =========================
+  // GA4 HELPER
+  // =========================
+  function trackGA4Event(eventName, category, label, value = 1) {
+    if (typeof gtag === 'function') {
+      gtag('event', eventName, {
+        event_category: category,
+        event_label: label,
+        value: value
+      });
+    }
+  }
+
+  // =========================
+  // PAGE VIEW
+  // =========================
+  gtag('event', 'page_view', {
+    page_title: document.title,
+    page_location: window.location.href,
+    page_path: window.location.pathname
+  });
+
+  // =========================
+  // TIME ON PAGE
+  // =========================
+  let startTime = Date.now();
+  window.addEventListener('beforeunload', () => {
+    let timeSpent = Math.round((Date.now() - startTime) / 1000);
+    trackGA4Event('time_on_page', 'Engagement', timeSpent);
+  });
+
+  // =========================
+  // ERROR TRACKING
+  // =========================
+  window.addEventListener('error', e => {
+    trackGA4Event('js_error', 'Error', e.message);
+  });
+
+  // =========================
+  // TRAFFIC SOURCE
+  // =========================
+  const urlParams = new URLSearchParams(window.location.search);
+  const utmSource = urlParams.get('utm_source') || document.referrer || 'direct';
+  trackGA4Event('lead_source', 'Source', utmSource);
+
+  // =========================
+  // SCROLL TRACKING
+  // =========================
+  const scrollTracked = {};
+  window.addEventListener('scroll', () => {
+    const scroll = window.scrollY + window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight;
+    const percent = Math.floor((scroll / docHeight) * 100);
+    [25,50,75,100].forEach(p => {
+      if (percent >= p && !scrollTracked[p]) {
+        trackGA4Event('scroll_depth', 'Scroll', p + '%');
+        scrollTracked[p] = true;
+      }
+    });
+  });
+
+  // =========================
+  // CLICK TRACKING
+  // =========================
+  document.addEventListener('click', e => {
+    const target = e.target.closest('a, button');
+    if (!target) return;
+
+    if (target.classList.contains('cta-btn') || target.classList.contains('sticky-btn') || target.classList.contains('service-btn')) {
+      trackGA4Event('cta_click', 'CTA', target.textContent.trim());
+    }
+
+    if (target.tagName === "A" && target.target === "_blank") {
+      trackGA4Event('outbound_click', 'Outbound', target.href);
+    }
+
+    if (target.getAttribute('href')?.startsWith("#")) {
+      trackGA4Event('internal_click', 'Navigation', target.getAttribute('href'));
+    }
+
+    if (target.getAttribute('href')?.startsWith("tel:")) {
+      trackGA4Event('phone_click', 'Contact', target.href);
+    }
+  });
+
+  // =========================
+  // BOOKING FORM + PRICE
+  // =========================
+  const bookingForm = document.getElementById("booking-form");
+  const successMsg = document.getElementById("success-msg");
+
+  function getDiscount() {
+    return parseFloat(bookingForm.querySelector('input[name="discount"]')?.value) || 0;
+  }
+
+  function calculatePrice(pkg, discount = 0) {
+    let base = 0;
+    if (pkg.includes('Starter')) base = 400;
+    else if (pkg.includes('Growth')) base = 800;
+    else if (pkg.includes('Premium')) base = 1500;
+    return discount ? base * (1 - discount/100) : base;
+  }
+
+  function updatePriceDisplay() {
+    const pkg = bookingForm.querySelector('select[name="package"]');
+    if (!pkg) return;
+
+    const basePrice = calculatePrice(pkg.value, 0);
+    const discount = getDiscount();
+    const final = calculatePrice(pkg.value, discount);
+
+    // Update hidden inputs
+    bookingForm.querySelector('input[name="price"]').value = final;
+    bookingForm.querySelector('input[name="discount"]').value = discount;
+
+    // Animate live price display
+    const priceDisplay = document.getElementById('price-display');
+    if (priceDisplay) {
+      if (discount > 0) {
+        let current = parseFloat(priceDisplay.getAttribute('data-current') || basePrice);
+        const step = (final - current) / 20;
+        let i = 0;
+        const animate = setInterval(() => {
+          current += step;
+          i++;
+          priceDisplay.innerHTML = `<span style="text-decoration: line-through; color:#888;">$${basePrice}</span> <span style="color:gold; font-weight:bold;">$${Math.round(current)}</span>`;
+          if (i >= 20) clearInterval(animate);
+        }, 20);
+        priceDisplay.setAttribute('data-current', final);
+      } else {
+        priceDisplay.textContent = `$${final}`;
+        priceDisplay.removeAttribute('data-current');
+      }
+    }
+  }
+
+  if (bookingForm) {
+    bookingForm.addEventListener('focusin', () => {
+      trackGA4Event('form_start', 'Booking Form', 'Started');
+    }, { once: true });
+
+    bookingForm.querySelector('select[name="package"]').addEventListener('change', updatePriceDisplay);
+
+    document.getElementById('payment-method').addEventListener('change', e => {
+      trackGA4Event('payment_selected', 'Booking Form', e.target.value);
+    });
+
+    bookingForm.querySelectorAll('input, select, textarea').forEach(input => {
+      input.addEventListener('blur', () => {
+        if (input.value) trackGA4Event('field_filled', 'Form', input.name);
+      });
+    });
+
+    bookingForm.addEventListener('submit', async e => {
+      e.preventDefault();
+
+      const formData = new FormData(bookingForm);
+      const pkg = bookingForm.querySelector('select[name="package"]')?.value || 'none';
+      const pay = bookingForm.querySelector('select[name="payment"]')?.value || 'none';
+      const price = parseFloat(bookingForm.querySelector('input[name="price"]')?.value) || 0;
+
+      trackGA4Event('form_submit', 'Booking', pkg);
+      gtag('event', 'form_submit', {
+        event_category: 'Booking',
+        event_label: pkg,
+        value: price,
+        currency: 'USD',
+        transport_type: 'beacon'
+      });
+
+      const urls = {
+        cashapp: "https://cash.app/$392shop",
+        venmo: "https://venmo.com/u/NexusWeb2026",
+        paypal: "https://www.paypal.me/Nexusweb2026"
+      };
+      if (urls[pay]) {
+        trackGA4Event('begin_checkout', 'Payment', pay);
+        window.open(urls[pay], "_blank");
+      }
+
+      try {
+        await fetch(bookingForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+        successMsg.style.display = "block";
+        bookingForm.reset();
+        updatePriceDisplay();
+        setTimeout(() => successMsg.style.display = "none", 5000);
+      } catch {
+        trackGA4Event('form_error', 'Error', 'Formspree Failed');
+      }
+
+      if (/Mobi|Android/i.test(navigator.userAgent)) {
+        const smsBody = encodeURIComponent(
+          `New Booking:\nName: ${formData.get('name')}\nEmail: ${formData.get('email')}\nPhone: ${formData.get('phone')}\nPackage: ${pkg}\nPrice: $${price}\nDetails: ${formData.get('details')}`
+        );
+        setTimeout(() => window.location.href = `sms:2484082328?body=${smsBody}`, 800);
+      }
+    });
+  }
+
+  // =========================
+  // EXIT POPUP
+  // =========================
+  let timerInterval;
+  function showExitPopup() {
+    const popup = document.getElementById('exit-popup');
+    if (!popup) return;
+
+    popup.classList.add('show');
+    trackGA4Event('exit_popup_view', 'Engagement', 'Shown');
+
+    let end = parseInt(localStorage.getItem('exitEnd')) || (Date.now() + 86400000);
+    localStorage.setItem('exitEnd', end);
+
+    function updateTimer() {
+      let t = Math.floor((end - Date.now()) / 1000);
+      if (t <= 0) { document.getElementById('exit-timer').textContent = '00:00:00'; clearInterval(timerInterval); return; }
+      const h = String(Math.floor(t / 3600)).padStart(2, '0');
+      const m = String(Math.floor((t % 3600) / 60)).padStart(2, '0');
+      const s = String(t % 60).padStart(2, '0');
+      document.getElementById('exit-timer').textContent = `${h}:${m}:${s}`;
+    }
+
+    updateTimer();
+    timerInterval = setInterval(updateTimer, 1000);
+  }
+
+  window.closeExitPopup = function() {
+    const popup = document.getElementById('exit-popup');
+    if (!popup) return;
+    popup.classList.remove('show');
+    clearInterval(timerInterval);
+  }
+
+window.submitExitContact = function() {
+  const contact = document.getElementById('exit-contact-popup').value.trim();
+  const pay = document.getElementById('exit-payment-method')?.value || null;
+  if (!contact) return alert('Enter your email or phone!');
+
+  // Track exit popup lead
+  trackGA4Event('exit_lead', 'Popup', contact);
+
+  // Apply 15% discount
+  bookingForm.querySelector('input[name="discount"]').value = 15;
+  updatePriceDisplay();
+  alert('✅ 15% Discount applied!');
+
+  // Close popup and scroll to Pay & Book form
+  closeExitPopup();
+  const bookingSection = document.getElementById('contact');
+  if (bookingSection) bookingSection.scrollIntoView({ behavior: 'smooth' });
+
+  // Prepare SMS message for mobile users
+  const pkg = bookingForm.querySelector('select[name="package"]')?.value || 'none';
+  const price = parseFloat(bookingForm.querySelector('input[name="price"]')?.value) || 0;
+  const details = bookingForm.querySelector('textarea[name="details"]')?.value || '';
+  const smsBody = encodeURIComponent(
+    `New Booking:\nName: ${contact}\nPackage: ${pkg}\nPrice: $${price}\nDetails: ${details}`
+  );
+
+  // Track payment and open URL if method is selected
+  if (pay) {
+    const urls = {
+      cashapp: "https://cash.app/$392shop",
+      venmo: "https://venmo.com/u/NexusWeb2026",
+      paypal: "https://www.paypal.me/Nexusweb2026"
+    };
+    if (urls[pay]) {
+      trackGA4Event('begin_checkout', 'Popup Payment', pay);
+
+      if (/Mobi|Android/i.test(navigator.userAgent)) {
+        // On mobile, also trigger SMS tracking
+        setTimeout(() => window.location.href = `sms:2484082328?body=${smsBody}`, 800);
+      }
+
+      // Open payment link
+      window.open(urls[pay], "_blank");
+    }
+  } else if (/Mobi|Android/i.test(navigator.userAgent)) {
+    // If no payment selected, still send SMS on mobile
+    setTimeout(() => window.location.href = `sms:2484082328?body=${smsBody}`, 800);
+  }
+}
+
+  document.getElementById('exit-contact-popup').addEventListener('keydown', e => { if (e.key === 'Enter') e.preventDefault(); });
+
+  // AUTO SHOW POPUP AFTER 8 SECONDS
+  setTimeout(() => showExitPopup(), 8000);
+
+});
+</script>
